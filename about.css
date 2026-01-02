@@ -1,10 +1,17 @@
-/* About Page Specific Styles - FIXED ACTIVE LINK */
+/* About Page Specific Styles - FIXED ACTIVE LINK & MOBILE OVERFLOW */
 
 /* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
 
 body {
@@ -19,6 +26,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    width: 100%;
 }
 
 /* FIXED: Fixed Navbar with ACTIVE LINK STYLES */
@@ -83,6 +91,7 @@ header {
     transition: all 0.3s ease;
     padding: 8px 0;
     position: relative;
+    word-wrap: break-word;
 }
 
 .nav-links a:hover {
@@ -140,6 +149,7 @@ header {
     position: relative;
     overflow: hidden;
     margin-top: -82px;
+    width: 100%;
 }
 
 .about-hero::before {
@@ -157,6 +167,8 @@ header {
     z-index: 2;
     max-width: 900px;
     margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
 }
 
 .about-hero h1 {
@@ -165,6 +177,8 @@ header {
     letter-spacing: 1px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
     line-height: 1.2;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .about-hero p {
@@ -174,6 +188,7 @@ header {
     max-width: 700px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
+    word-wrap: break-word;
 }
 
 /* Hero Stats */
@@ -183,6 +198,7 @@ header {
     gap: 30px;
     margin-top: 60px;
     padding: 0 20px;
+    width: 100%;
 }
 
 .stat-item {
@@ -197,6 +213,7 @@ header {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 .stat-item:hover {
@@ -235,6 +252,8 @@ header {
 .section-title {
     text-align: center;
     margin-bottom: 70px;
+    width: 100%;
+    padding: 0 15px;
 }
 
 .section-title h2 {
@@ -243,6 +262,7 @@ header {
     margin-bottom: 20px;
     position: relative;
     display: inline-block;
+    word-wrap: break-word;
 }
 
 .section-title h2::after {
@@ -263,12 +283,15 @@ header {
     margin: 25px auto 0;
     font-size: 1.2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-wrap: break-word;
 }
 
 /* Story Section */
 .story-section {
     padding: 100px 0;
     background-color: #fff;
+    width: 100%;
+    overflow: hidden;
 }
 
 /* Story Timeline */
@@ -276,6 +299,8 @@ header {
     max-width: 800px;
     margin: 60px auto 0;
     position: relative;
+    width: 100%;
+    padding: 0 15px;
 }
 
 .story-timeline::before {
@@ -294,6 +319,7 @@ header {
     display: flex;
     margin-bottom: 60px;
     position: relative;
+    width: 100%;
 }
 
 .timeline-item:nth-child(odd) {
@@ -333,6 +359,7 @@ header {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
     position: relative;
     border: 1px solid #f0f0f0;
+    width: calc(100% - 140px);
 }
 
 .timeline-item:nth-child(odd) .timeline-content {
@@ -372,6 +399,7 @@ header {
     font-size: 1.8rem;
     color: #0c3b2e;
     margin-bottom: 15px;
+    word-wrap: break-word;
 }
 
 .timeline-content p {
@@ -379,11 +407,14 @@ header {
     line-height: 1.7;
     margin-bottom: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-wrap: break-word;
 }
 
 /* Philosophy Section */
 .philosophy-section {
     padding: 100px 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 .alt-bg {
@@ -395,6 +426,7 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: start;
+    width: 100%;
 }
 
 .philosophy-content {
@@ -413,6 +445,7 @@ header {
     border-radius: 12px;
     transition: all 0.3s ease;
     border: 1px solid transparent;
+    width: 100%;
 }
 
 .principle-item:hover {
@@ -440,6 +473,7 @@ header {
     font-size: 1.5rem;
     color: #0c3b2e;
     margin-bottom: 10px;
+    word-wrap: break-word;
 }
 
 .principle-content p {
@@ -447,6 +481,7 @@ header {
     line-height: 1.6;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-wrap: break-word;
 }
 
 .philosophy-image {
@@ -454,6 +489,7 @@ header {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 .philosophy-image img {
@@ -462,6 +498,7 @@ header {
     object-fit: cover;
     display: block;
     transition: transform 0.5s ease;
+    max-width: 100%;
 }
 
 .philosophy-image:hover img {
@@ -482,6 +519,7 @@ header {
     font-size: 1.8rem;
     margin-bottom: 10px;
     color: #ffb400;
+    word-wrap: break-word;
 }
 
 .image-overlay p {
@@ -489,12 +527,15 @@ header {
     margin: 0;
     font-size: 1.1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-wrap: break-word;
 }
 
 /* Team Section */
 .team-section {
     padding: 100px 0;
     background-color: #fff;
+    width: 100%;
+    overflow: hidden;
 }
 
 .team-grid {
@@ -502,6 +543,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
     margin-top: 60px;
+    width: 100%;
 }
 
 .team-member {
@@ -513,6 +555,7 @@ header {
     border: 1px solid #f0f0f0;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .team-member:hover {
@@ -524,6 +567,7 @@ header {
     position: relative;
     height: 280px;
     overflow: hidden;
+    width: 100%;
 }
 
 .member-image img {
@@ -531,6 +575,7 @@ header {
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
+    max-width: 100%;
 }
 
 .team-member:hover .member-image img {
@@ -585,6 +630,7 @@ header {
     font-size: 1.6rem;
     color: #0c3b2e;
     margin-bottom: 5px;
+    word-wrap: break-word;
 }
 
 .member-role {
@@ -600,6 +646,7 @@ header {
     margin-bottom: 20px;
     flex-grow: 1;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-wrap: break-word;
 }
 
 .member-specialty {
@@ -633,6 +680,8 @@ header {
 /* Awards Section */
 .awards-section {
     padding: 100px 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 .awards-grid {
@@ -640,6 +689,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     margin-top: 60px;
+    width: 100%;
 }
 
 .award-item {
@@ -652,6 +702,7 @@ header {
     border: 1px solid #f0f0f0;
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 .award-item:hover {
@@ -685,6 +736,7 @@ header {
     color: #0c3b2e;
     margin-bottom: 10px;
     line-height: 1.4;
+    word-wrap: break-word;
 }
 
 .award-item p {
@@ -692,6 +744,7 @@ header {
     margin-bottom: 15px;
     font-size: 0.95rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-wrap: break-word;
 }
 
 .award-year {
@@ -708,6 +761,8 @@ header {
 .visit-section {
     padding: 100px 0 30px;
     background-color: #fff;
+    width: 100%;
+    overflow: hidden;
 }
 
 .visit-grid {
@@ -715,6 +770,7 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: start;
+    width: 100%;
 }
 
 .visit-details {
@@ -730,6 +786,7 @@ header {
     border-radius: 12px;
     transition: all 0.3s ease;
     border: 1px solid transparent;
+    width: 100%;
 }
 
 .detail-item:hover {
@@ -755,6 +812,7 @@ header {
     font-size: 1.4rem;
     color: #0c3b2e;
     margin-bottom: 10px;
+    word-wrap: break-word;
 }
 
 .detail-content p {
@@ -762,6 +820,7 @@ header {
     line-height: 1.6;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-wrap: break-word;
 }
 
 .detail-content strong {
@@ -773,6 +832,7 @@ header {
     display: flex;
     gap: 20px;
     margin-top: 40px;
+    width: 100%;
 }
 
 .btn-primary {
@@ -788,6 +848,7 @@ header {
     align-items: center;
     gap: 10px;
     box-shadow: 0 5px 20px rgba(12, 59, 46, 0.2);
+    width: auto;
 }
 
 .btn-primary:hover {
@@ -809,6 +870,7 @@ header {
     align-items: center;
     gap: 10px;
     border: 2px solid #0c3b2e;
+    width: auto;
 }
 
 .btn-secondary:hover {
@@ -827,11 +889,13 @@ header {
     justify-content: center;
     min-height: 500px;
     border: 2px dashed #ddd;
+    width: 100%;
 }
 
 .map-placeholder {
     text-align: center;
     color: #666;
+    width: 100%;
 }
 
 .map-placeholder i {
@@ -844,12 +908,14 @@ header {
     font-size: 1.8rem;
     color: #0c3b2e;
     margin-bottom: 10px;
+    word-wrap: break-word;
 }
 
 .map-placeholder p {
     margin-bottom: 20px;
     font-size: 1.1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-wrap: break-word;
 }
 
 .map-note {
@@ -921,6 +987,7 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+    word-wrap: break-word;
 }
 
 .map-modal-close {
@@ -954,10 +1021,12 @@ header {
     align-items: center;
     justify-content: center;
     border: 2px dashed #ddd;
+    width: 100%;
 }
 
 .map-placeholder-large {
     text-align: center;
+    width: 100%;
 }
 
 .map-placeholder-large i {
@@ -970,12 +1039,14 @@ header {
     font-size: 1.8rem;
     color: #0c3b2e;
     margin-bottom: 10px;
+    word-wrap: break-word;
 }
 
 .map-placeholder-large p {
     margin-bottom: 15px;
     font-size: 1.1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-wrap: break-word;
 }
 
 .map-address {
@@ -985,6 +1056,7 @@ header {
     text-align: left;
     margin: 20px 0;
     border: 1px solid #f0f0f0;
+    width: 100%;
 }
 
 .map-address strong {
@@ -996,6 +1068,7 @@ header {
     flex-direction: column;
     gap: 15px;
     margin-top: 20px;
+    width: 100%;
 }
 
 .btn-map-action {
@@ -1014,6 +1087,7 @@ header {
     gap: 10px;
     text-decoration: none;
     text-align: center;
+    width: 100%;
 }
 
 .btn-map-action:hover {
@@ -1034,10 +1108,12 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+    word-wrap: break-word;
 }
 
 .direction-method {
     margin-bottom: 25px;
+    width: 100%;
 }
 
 .direction-method h5 {
@@ -1047,6 +1123,7 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+    word-wrap: break-word;
 }
 
 .direction-method p {
@@ -1054,6 +1131,7 @@ header {
     line-height: 1.6;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-wrap: break-word;
 }
 
 /* Footer */
@@ -1061,6 +1139,8 @@ footer {
     background-color: #0a2a21;
     color: #fff;
     padding: 80px 0 30px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .footer-content {
@@ -1068,6 +1148,7 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 50px;
     margin-bottom: 60px;
+    width: 100%;
 }
 
 .footer-logo {
@@ -1082,6 +1163,7 @@ footer {
     margin-bottom: 25px;
     line-height: 1.8;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-wrap: break-word;
 }
 
 .social-icons {
@@ -1114,6 +1196,7 @@ footer {
     color: #fff;
     position: relative;
     padding-bottom: 12px;
+    word-wrap: break-word;
 }
 
 .footer-links h3::after, .footer-contact h3::after, .footer-hours h3::after {
@@ -1153,6 +1236,7 @@ footer {
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
+    word-wrap: break-word;
 }
 
 .footer-links a i {
@@ -1172,6 +1256,7 @@ footer {
     display: flex;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-wrap: break-word;
 }
 
 .footer-contact i, .footer-hours i {
@@ -1188,9 +1273,17 @@ footer {
     color: #999;
     font-size: 0.95rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-wrap: break-word;
 }
 
-/* Responsive Styles */
+/* ===== MOBILE RESPONSIVE STYLES ===== */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+}
+
 @media (max-width: 992px) {
     .philosophy-grid,
     .visit-grid,
@@ -1210,9 +1303,14 @@ footer {
     .team-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    
+    .container {
+        padding: 0 25px;
+    }
 }
 
 @media (max-width: 768px) {
+    /* Mobile Navigation */
     .mobile-menu-btn {
         display: block;
     }
@@ -1243,6 +1341,7 @@ footer {
         margin-left: 0;
     }
     
+    /* Hero Section */
     .about-hero {
         padding: 100px 0 80px;
     }
@@ -1253,8 +1352,10 @@ footer {
     
     .about-hero p {
         font-size: 1.2rem;
+        padding: 0 10px;
     }
     
+    /* Timeline Mobile Fix */
     .story-timeline::before {
         left: 30px;
     }
@@ -1262,6 +1363,7 @@ footer {
     .timeline-item {
         flex-direction: row !important;
         margin-left: 60px;
+        width: calc(100% - 60px);
     }
     
     .timeline-year {
@@ -1277,6 +1379,8 @@ footer {
     .timeline-content {
         margin: 0 !important;
         text-align: left !important;
+        width: 100%;
+        padding: 20px;
     }
     
     .timeline-content::before {
@@ -1288,27 +1392,71 @@ footer {
         border-bottom: 1px solid #f0f0f0;
     }
     
+    /* Stats Grid */
     .hero-stats {
         grid-template-columns: 1fr;
         gap: 20px;
+        padding: 0 10px;
     }
     
+    .stat-item {
+        padding: 20px;
+    }
+    
+    /* Team Grid */
     .team-grid {
         grid-template-columns: 1fr;
+        gap: 30px;
     }
     
+    /* CTA Buttons */
     .cta-buttons {
         flex-direction: column;
+        gap: 15px;
     }
     
     .btn-primary,
     .btn-secondary {
         width: 100%;
         justify-content: center;
+        text-align: center;
+        padding: 15px 25px;
+    }
+    
+    /* Container padding */
+    .container {
+        padding: 0 20px;
+    }
+    
+    /* Section padding */
+    .story-section,
+    .philosophy-section,
+    .team-section,
+    .awards-section,
+    .visit-section {
+        padding: 70px 0;
+    }
+    
+    /* Modal fixes */
+    .map-modal-content {
+        width: 95%;
+        margin: 10px;
+    }
+    
+    .map-modal-body {
+        padding: 20px;
+        gap: 30px;
+    }
+    
+    /* Awards grid */
+    .awards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 }
 
 @media (max-width: 576px) {
+    /* Base adjustments */
     body {
         padding-top: 70px;
     }
@@ -1330,6 +1478,7 @@ footer {
         max-height: calc(100vh - 70px);
     }
     
+    /* Hero Section */
     .about-hero {
         padding: 80px 0 60px;
         margin-top: -70px;
@@ -1337,22 +1486,30 @@ footer {
     
     .about-hero h1 {
         font-size: 2.2rem;
+        padding: 0 10px;
     }
     
     .about-hero p {
         font-size: 1.1rem;
+        padding: 0 15px;
     }
     
     .stat-item {
-        padding: 20px;
+        padding: 15px;
     }
     
     .stat-number {
         font-size: 2.5rem;
     }
     
+    /* Section Titles */
+    .section-title {
+        margin-bottom: 50px;
+    }
+    
     .section-title h2 {
         font-size: 2rem;
+        padding: 0 10px;
     }
     
     .section-title h2::after {
@@ -1360,38 +1517,169 @@ footer {
         bottom: -12px;
     }
     
+    .section-title p {
+        font-size: 1.1rem;
+        padding: 0 10px;
+    }
+    
+    /* Timeline */
+    .timeline-item {
+        margin-left: 40px;
+        width: calc(100% - 40px);
+    }
+    
+    .timeline-year {
+        width: 70px;
+        height: 70px;
+        left: -40px;
+        font-size: 1.2rem;
+    }
+    
+    .timeline-content {
+        padding: 15px;
+    }
+    
+    /* Principle Items */
     .principle-item {
         flex-direction: column;
         text-align: center;
+        padding: 15px;
     }
     
     .principle-icon {
-        margin: 0 auto;
+        margin: 0 auto 15px;
     }
     
+    /* Detail Items */
     .detail-item {
         flex-direction: column;
         text-align: center;
+        padding: 20px;
     }
     
     .detail-icon {
-        margin: 0 auto;
+        margin: 0 auto 15px;
     }
     
-    .map-modal-body {
+    /* Team Members */
+    .member-info {
         padding: 20px;
     }
     
-    .map-container {
-        padding: 20px;
-    }
-    
+    /* Awards */
     .awards-grid {
         grid-template-columns: 1fr;
+        gap: 15px;
     }
     
+    .award-item {
+        padding: 20px 15px;
+    }
+    
+    /* Modal */
+    .map-modal-body {
+        padding: 15px;
+        gap: 20px;
+    }
+    
+    .map-modal-header h3 {
+        font-size: 1.2rem;
+    }
+    
+    .map-placeholder-large h4 {
+        font-size: 1.4rem;
+    }
+    
+    /* Footer */
     .footer-content {
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+    
+    .footer-links h3, 
+    .footer-contact h3, 
+    .footer-hours h3 {
+        font-size: 1.2rem;
+    }
+    
+    /* Container padding for very small screens */
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Extra small screen fixes */
+    .about-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .about-hero p {
+        font-size: 1rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .timeline-year {
+        width: 60px;
+        height: 60px;
+        left: -35px;
+        font-size: 1rem;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.4rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* Prevent image overflow */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Ensure all text elements wrap properly */
+h1, h2, h3, h4, h5, h6, p, span, a, li, td, th {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Fix for any remaining overflow issues */
+section, div, article, aside, header, footer, nav {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Animation for stats counter (if using JS) */
+.stat-number.animated {
+    animation: countUp 2s ease-out;
+}
+
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

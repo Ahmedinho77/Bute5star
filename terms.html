@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions | Bute 5 Star Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reservation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Terms Page Specific Styles */
+        .terms-page-hero {
+            background: linear-gradient(rgba(6, 24, 22, 0.85), rgba(26, 92, 72, 0.85)), 
+                        url('images/terms-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .terms-page-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, transparent 30%, rgba(0,0,0,0.3) 100%);
+        }
+        
+        .terms-page-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .terms-page-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .terms-page-hero p {
+            font-size: 1.2rem;
+            color: #f0f0f0;
+            margin-bottom: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+        
+        .back-to-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .back-to-home:hover {
+            background: rgba(255, 180, 0, 0.2);
+            transform: translateY(-3px);
+            border-color: #ffb400;
+        }
+        
+        .back-to-home i {
+            color: #ffb400;
+        }
+        
+        .terms-content-section {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+        
+        .terms-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .terms-navigation {
+            background: #f9f9f9;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 40px;
+            border: 1px solid #e0e0e0;
+            position: sticky;
+            top: 100px;
+            z-index: 10;
+        }
+        
+        .terms-nav-title {
+            font-size: 1.3rem;
+            color: #0c3b2e;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .terms-nav-title i {
+            color: #ffb400;
+        }
+        
+        .terms-nav-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .terms-nav-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #666;
+            text-decoration: none;
+            padding: 12px 15px;
+            border-radius: 8px;
+            background: white;
+            border: 1px solid #e0e0e0;
+            transition: all 0.3s ease;
+        }
+        
+        .terms-nav-link:hover {
+            color: #0c3b2e;
+            border-color: #0c3b2e;
+            background: #f0f9f0;
+        }
+        
+        .terms-nav-link i {
+            color: #0c3b2e;
+            font-size: 0.9rem;
+        }
+        
+        .terms-section {
+            margin-bottom: 50px;
+            scroll-margin-top: 120px;
+        }
+        
+        .terms-section h2 {
+            font-size: 1.8rem;
+            color: #0c3b2e;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .terms-section h2 i {
+            color: #ffb400;
+        }
+        
+        .terms-subsection {
+            margin-bottom: 35px;
+        }
+        
+        .terms-subsection h3 {
+            font-size: 1.4rem;
+            color: #0c3b2e;
+            margin-bottom: 20px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .terms-subsection h3:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 10px;
+            background: #ffb400;
+            border-radius: 50%;
+        }
+        
+        .terms-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+        }
+        
+        .terms-list li {
+            padding: 10px 0 10px 30px;
+            position: relative;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+        
+        .terms-list li:before {
+            content: '•';
+            position: absolute;
+            left: 10px;
+            color: #0c3b2e;
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+        
+        .terms-list.disc li:before {
+            content: '○';
+            color: #ffb400;
+        }
+        
+        .terms-note {
+            background: #fffaf0;
+            border-left: 4px solid #ffb400;
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 25px 0;
+        }
+        
+        .terms-note p {
+            color: #666;
+            margin: 0;
+            font-style: italic;
+        }
+        
+        .terms-warning {
+            background: #fff0f0;
+            border-left: 4px solid #ff6b6b;
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 25px 0;
+        }
+        
+        .terms-warning p {
+            color: #666;
+            margin: 0;
+        }
+        
+        .terms-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .terms-table th {
+            background: #0c3b2e;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .terms-table td {
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            color: #555;
+        }
+        
+        .terms-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .terms-table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        .terms-actions {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .btn-print-terms {
+            background: linear-gradient(to right, #0c3b2e, #1a5c48);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .btn-print-terms:hover {
+            background: linear-gradient(to right, #1a5c48, #0c3b2e);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(12, 59, 46, 0.2);
+        }
+        
+        .last-updated {
+            text-align: center;
+            color: #888;
+            font-size: 0.9rem;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed #e0e0e0;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .terms-page-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .terms-page-hero p {
+                font-size: 1.1rem;
+            }
+            
+            .terms-navigation {
+                position: static;
+            }
+            
+            .terms-nav-links {
+                grid-template-columns: 1fr;
+            }
+            
+            .terms-section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .terms-subsection h3 {
+                font-size: 1.2rem;
+            }
+            
+            .terms-actions {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .btn-print-terms {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .terms-page-hero {
+                padding: 80px 0;
+            }
+            
+            .terms-page-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .terms-content-section {
+                padding: 50px 0;
+            }
+            
+            .terms-table {
+                font-size: 0.9rem;
+            }
+            
+            .terms-table th,
+            .terms-table td {
+                padding: 10px;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            .terms-page-hero,
+            .terms-navigation,
+            .terms-actions,
+            .back-to-home,
+            .navbar,
+            .footer {
+                display: none !important;
+            }
+            
+            .terms-content-section {
+                padding: 0;
+            }
+            
+            .terms-section {
+                margin-bottom: 30px;
+                page-break-inside: avoid;
+            }
+            
+            .terms-container {
+                max-width: 100%;
+                padding: 0;
+            }
+            
+            body {
+                font-size: 12pt;
+                line-height: 1.4;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navbar (Same as reservation page) -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="logo-text">BUTE <span>5 STAR</span></div>
+                </a>
+                
+                <div class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="reservation.html">Reservations</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Terms Hero Section -->
+    <section class="terms-page-hero">
+        <div class="terms-page-hero-content">
+            <h1>Terms & Conditions</h1>
+            <p>Please read these terms carefully before making a reservation at Bute 5 Star Restaurant. These terms govern your use of our services.</p>
+            <a href="index.html" class="back-to-home">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </section>
+
+    <!-- Terms Content Section -->
+    <section class="terms-content-section">
+        <div class="terms-container">
+            <!-- Quick Navigation -->
+            <div class="terms-navigation">
+                <div class="terms-nav-title">
+                    <i class="fas fa-bookmark"></i> Quick Navigation
+                </div>
+                <div class="terms-nav-links">
+                    <a href="#reservation" class="terms-nav-link">
+                        <i class="fas fa-calendar-check"></i> Reservation Policy
+                    </a>
+                    <a href="#cancellation" class="terms-nav-link">
+                        <i class="fas fa-times-circle"></i> Cancellation Policy
+                    </a>
+                    <a href="#pricing" class="terms-nav-link">
+                        <i class="fas fa-tag"></i> Pricing Policy
+                    </a>
+                    <a href="#dining" class="terms-nav-link">
+                        <i class="fas fa-utensils"></i> Dining Policy
+                    </a>
+                    <a href="#privacy" class="terms-nav-link">
+                        <i class="fas fa-shield-alt"></i> Privacy Policy
+                    </a>
+                    <a href="#contact" class="terms-nav-link">
+                        <i class="fas fa-phone"></i> Contact Information
+                    </a>
+                </div>
+            </div>
+
+            <!-- Reservation Policy -->
+            <section id="reservation" class="terms-section">
+                <h2><i class="fas fa-calendar-check"></i> 1. Reservation Policy</h2>
+                
+                <div class="terms-subsection">
+                    <h3>1.1 Booking Requirements</h3>
+                    <ul class="terms-list">
+                        <li>Reservations can be made online, by phone, or in person</li>
+                        <li>Minimum reservation time is 2 hours before dining</li>
+                        <li>For same-day reservations, please call +254 721 237 883</li>
+                        <li>We hold tables for 15 minutes after the reservation time</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-subsection">
+                    <h3>1.2 Group Bookings</h3>
+                    <ul class="terms-list">
+                        <li>Groups of 8+ require 24-hour advance notice</li>
+                        <li>Groups of 12+ require a 50% deposit</li>
+                        <li>Private room bookings require 48-hour confirmation</li>
+                        <li>Maximum group size: 20 people</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-subsection">
+                    <h3>1.3 Special Requests</h3>
+                    <ul class="terms-list">
+                        <li>Special requests are accommodated based on availability</li>
+                        <li>Dietary restrictions must be communicated at time of booking</li>
+                        <li>Decoration requests may incur additional charges</li>
+                        <li>Special menus require 48-hour notice</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-note">
+                    <p><strong>Note:</strong> We recommend booking at least 3 days in advance for weekend reservations and 7 days in advance for special occasions.</p>
+                </div>
+            </section>
+
+            <!-- Cancellation Policy -->
+            <section id="cancellation" class="terms-section">
+                <h2><i class="fas fa-times-circle"></i> 2. Cancellation Policy</h2>
+                
+                <div class="terms-subsection">
+                    <h3>2.1 Standard Cancellations</h3>
+                    <ul class="terms-list">
+                        <li>Free cancellation up to 2 hours before reservation time</li>
+                        <li>Cancellations within 2 hours incur a KES 500 fee per person</li>
+                        <li>No-shows will be charged KES 1,000 per person</li>
+                        <li>Late arrivals may result in table forfeiture</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-subsection">
+                    <h3>2.2 Group Cancellations</h3>
+                    <ul class="terms-list">
+                        <li>Groups of 8+: 24-hour notice required for free cancellation</li>
+                        <li>Groups of 12+: 50% deposit is non-refundable within 24 hours</li>
+                        <li>Private events: 72-hour notice required for full refund</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-subsection">
+                    <h3>2.3 Special Occasion Cancellations</h3>
+                    <ul class="terms-list">
+                        <li>Birthday/Anniversary packages: 48-hour notice required</li>
+                        <li>Custom menus: 72-hour notice for full refund</li>
+                        <li>Decorations: Non-refundable if cancelled within 24 hours</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-warning">
+                    <p><strong>Important:</strong> Cancellation fees are charged to the credit card provided at the time of booking. If you need to cancel, please call us directly for immediate processing.</p>
+                </div>
+            </section>
+
+            <!-- Pricing Policy -->
+            <section id="pricing" class="terms-section">
+                <h2><i class="fas fa-tag"></i> 3. Pricing Policy</h2>
+                
+                <div class="terms-subsection">
+                    <h3>3.1 Menu Pricing</h3>
+                    <ul class="terms-list">
+                        <li>All prices are in Kenyan Shillings (KES) unless stated otherwise</li>
+                        <li>Prices are subject to change without prior notice</li>
+                        <li>Menu items are subject to availability</li>
+                        <li>Seasonal menus may have different pricing</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-subsection">
+                    <h3>3.2 Additional Charges</h3>
+                    <table class="terms-table">
+                        <thead>
+                            <tr>
+                                <th>Service</th>
+                                <th>Charge</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cake Cutting Fee</td>
+                                <td>KES 300</td>
+                                <td>For outside cakes only</td>
+                            </tr>
+                            <tr>
+                                <td>Corkage Fee</td>
+                                <td>KES 1,000</td>
+                                <td>Per bottle of outside wine</td>
+                            </tr>
+                            <tr>
+                                <td>Special Decoration</td>
+                                <td>KES 2,000+</td>
+                                <td>Based on requirements</td>
+                            </tr>
+                            <tr>
+                                <td>Private Room</td>
+                                <td>KES 5,000</td>
+                                <td>Minimum 3 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Valet Parking</td>
+                                <td>Free</td>
+                                <td>For dining guests only</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="terms-subsection">
+                    <h3>3.3 Taxes and Service Charges</h3>
+                    <ul class="terms-list disc">
+                        <li>16% VAT included in all prices</li>
+                        <li>10% service charge added to final bill</li>
+                        <li>Credit card payments: 3% processing fee</li>
+                        <li>Corporate bookings: Tax invoice provided</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Dining Policy -->
+            <section id="dining" class="terms-section">
+                <h2><i class="fas fa-utensils"></i> 4. Dining Policy</h2>
+                
+                <div class="terms-subsection">
+                    <h3>4.1 Dress Code</h3>
+                    <ul class="terms-list">
+                        <li>Smart casual attire required</li>
+                        <li>No beachwear, athletic wear, or flip-flops</li>
+                        <li>Business casual recommended for dinner</li>
+                        <li>Management reserves right to refuse entry based on attire</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-subsection">
+                    <h3>4.2 Conduct Policy</h3>
+                    <ul class="terms-list">
+                        <li>Respectful behavior required at all times</li>
+                        <li>No smoking or vaping indoors</li>
+                        <li>Children must be supervised by adults</li>
+                        <li>Photography for personal use only</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-subsection">
+                    <h3>4.3 Allergies & Dietary Restrictions</h3>
+                    <ul class="terms-list">
+                        <li>Notify staff of any allergies when ordering</li>
+                        <li>We cannot guarantee allergen-free environment</li>
+                        <li>Vegetarian and halal options available</li>
+                        <li>Customization may incur additional charges</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-subsection">
+                    <h3>4.4 Time Limitations</h3>
+                    <ul class="terms-list">
+                        <li>Standard dining: 2-hour table allocation</li>
+                        <li>Groups of 6+: 2.5-hour allocation</li>
+                        <li>Private events: 3-hour minimum</li>
+                        <li>Extensions subject to availability and additional charges</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Privacy Policy -->
+            <section id="privacy" class="terms-section">
+                <h2><i class="fas fa-shield-alt"></i> 5. Privacy Policy</h2>
+                
+                <div class="terms-subsection">
+                    <h3>5.1 Data Collection</h3>
+                    <ul class="terms-list">
+                        <li>We collect: Name, contact details, dining preferences</li>
+                        <li>Payment information is encrypted and secure</li>
+                        <li>Reservation history stored for service improvement</li>
+                        <li>Marketing communications are opt-in only</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-subsection">
+                    <h3>5.2 Data Usage</h3>
+                    <ul class="terms-list">
+                        <li>Personal data used for reservation management only</li>
+                        <li>No data shared with third parties without consent</li>
+                        <li>You can request data deletion at any time</li>
+                        <li>Security measures protect your information</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-subsection">
+                    <h3>5.3 Cookies</h3>
+                    <ul class="terms-list">
+                        <li>Essential cookies for website functionality</li>
+                        <li>Analytics cookies to improve user experience</li>
+                        <li>Marketing cookies only with user consent</li>
+                        <li>Cookie preferences can be managed in browser settings</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Contact Information -->
+            <section id="contact" class="terms-section">
+                <h2><i class="fas fa-phone"></i> 6. Contact Information</h2>
+                
+                <div class="terms-subsection">
+                    <h3>6.1 Restaurant Contact</h3>
+                    <ul class="terms-list disc">
+                        <li><strong>Address:</strong> Bute Town Center, Wajir County, Kenya</li>
+                        <li><strong>Phone:</strong> +254 721 237 883</li>
+                        <li><strong>Email:</strong> reservations@bute5star.com</li>
+                        <li><strong>Hours:</strong> 5:00 PM - 11:00 PM Daily</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-subsection">
+                    <h3>6.2 Management Contact</h3>
+                    <ul class="terms-list disc">
+                        <li><strong>General Manager:</strong> Ahmed Ali</li>
+                        <li><strong>Events Manager:</strong> Available upon request</li>
+                        <li><strong>Complaints:</strong> manager@bute5star.com</li>
+                        <li><strong>Response Time:</strong> 24-48 hours</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-note">
+                    <p>For urgent matters, please call us directly. Email responses may take 24-48 hours.</p>
+                </div>
+            </section>
+
+            <!-- Actions -->
+            <div class="terms-actions">
+                <button class="btn-print-terms" id="printTerms">
+                    <i class="fas fa-print"></i> Print Terms
+                </button>
+                <a href="reservation.html" class="btn-print-terms" style="text-decoration: none;">
+                    <i class="fas fa-calendar-plus"></i> Make a Reservation
+                </a>
+            </div>
+
+            <!-- Last Updated -->
+            <div class="last-updated">
+                <p><i class="fas fa-clock"></i> Last Updated: December 31, 2023 | Version 2.0</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as reservation page) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">BUTE 5 STAR</div>
+                    <p>An award-winning halal dining destination where culinary excellence meets unparalleled service. Experience the art of fine dining in an atmosphere of timeless elegance.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/14RPMbnhgGu/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/ahmeyali.9/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@AhmedAli-k7b" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/254721237883?text=Hello%20Ahmed,%20I%20would%20like%20to%20Know%20about%20Bute%205%20Star%20restuarant" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Our Menu</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="reservation.html"><i class="fas fa-chevron-right"></i> Reservations</a></li>
+                        <li><a href="events.html"><i class="fas fa-chevron-right"></i> Private Events</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Bute Town, Wajir County</p>
+                    <p><i class="fas fa-phone"></i> +254 721 237 883</p>
+                    <p><i class="fas fa-envelope"></i> reservations@bute5star.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sun: 5:00 PM - 11:00 PM</p>
+                </div>
+                
+                <div class="footer-hours">
+                    <h3>Reservation Hours</h3>
+                    <p><i class="fas fa-phone"></i> Call: 10:00 AM - 10:00 PM</p>
+                    <p><i class="fas fa-calendar-alt"></i> Online: 24/7</p>
+                    <p><i class="fas fa-star"></i> Book Early for Weekends</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Bute 5 Star Restaurant. All rights reserved. | Developed by Ahmed Ali</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const navLinks = document.getElementById('nav-links');
+            
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                    mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+                        ? '<i class="fas fa-times"></i>' 
+                        : '<i class="fas fa-bars"></i>';
+                });
+            }
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('.terms-nav-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Update URL without page reload
+                        history.pushState(null, null, `#${targetId}`);
+                        
+                        // Add active class to clicked link
+                        document.querySelectorAll('.terms-nav-link').forEach(l => {
+                            l.classList.remove('active');
+                        });
+                        this.classList.add('active');
+                    }
+                });
+            });
+
+            // Print terms button
+            document.getElementById('printTerms').addEventListener('click', function() {
+                window.print();
+            });
+
+            // Highlight current section in navigation
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.3
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        document.querySelectorAll('.terms-nav-link').forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === `#${id}`) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all term sections
+            document.querySelectorAll('.terms-section').forEach(section => {
+                observer.observe(section);
+            });
+
+            // Back to top functionality
+            const backToHome = document.querySelector('.back-to-home');
+            if (backToHome) {
+                backToHome.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                    setTimeout(() => {
+                        window.location.href = 'index.html';
+                    }, 500);
+                });
+            }
+
+            // Highlight current section on page load
+            const currentHash = window.location.hash;
+            if (currentHash) {
+                const targetElement = document.querySelector(currentHash);
+                if (targetElement) {
+                    setTimeout(() => {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }, 100);
+                    
+                    // Highlight corresponding nav link
+                    document.querySelectorAll('.terms-nav-link').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === currentHash) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            }
+
+            // Add active class to terms link in footer if needed
+            const currentPage = window.location.pathname;
+            if (currentPage.includes('terms.html')) {
+                // You could add specific styling here if needed
+            }
+        });
+
+        // Handle browser back/forward buttons
+        window.addEventListener('popstate', function() {
+            const currentHash = window.location.hash;
+            if (currentHash) {
+                const targetElement = document.querySelector(currentHash);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+</html>

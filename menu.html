@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bute 5 Star Restaurant | Exquisite Halal Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navbar -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="logo-text">BUTE <span>5 STAR</span></div>
+                </a>
+                
+                <div class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="reservation.html">Reservations</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menu Hero Section -->
+    <section class="menu-hero">
+        <div class="container">
+            <div class="menu-hero-content">
+                <h1>Our Exquisite Halal Menu</h1>
+                <p>Experience culinary excellence with our carefully crafted dishes, prepared using 100% halal ingredients and traditional techniques with a modern twist.</p>
+                <div class="menu-tags">
+                    <span class="menu-tag halal-tag"><i class="fas fa-check-circle"></i> 100% Halal Certified</span>
+                    <span class="menu-tag"><i class="fas fa-leaf"></i> Vegetarian Options</span>
+                    <span class="menu-tag"><i class="fas fa-fish"></i> Fresh Seafood</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Categories Navigation -->
+    <section class="menu-categories">
+        <div class="container">
+            <div class="category-nav">
+                <a href="#starters" class="category-link active">Starters</a>
+                <a href="#mains" class="category-link">Main Courses</a>
+                <a href="#seafood" class="category-link">Seafood</a>
+                <a href="#desserts" class="category-link">Desserts</a>
+                <a href="#beverages" class="category-link">Beverages</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Starters Section -->
+    <section id="starters" class="menu-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Starters & Appetizers</h2>
+                <p>Begin your culinary journey with our exquisite selection of starters</p>
+            </div>
+            
+            <div class="menu-items">
+                <div class="menu-item-card">
+                    <div class="menu-item-preview">
+                        <img src="images/truffle-arancini.jpg" alt="Truffle Arancini" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$18</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Truffle Arancini</h3>
+                        <p>Crispy risotto balls filled with mozzarella and black truffle, served with truffle aioli</p>
+                        <div class="dietary-tags">
+                            <span class="dietary-tag vegetarian">V</span>
+                        </div>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$18</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item-card">
+                    <div class="menu-item-preview">
+                        <img src="images/chicken-pate.jpg" alt="Chicken Liver Pâté" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$20</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Chicken Liver Pâté</h3>
+                        <p>Halal chicken liver pâté with fig compote, brioche toast, and micro greens</p>
+                        <div class="dietary-tags">
+                            <span class="dietary-tag halal">Halal</span>
+                        </div>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$20</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item-card">
+                    <div class="menu-item-preview">
+                        <img src="images/burrata-caprese.jpg" alt="Burrata Caprese" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$22</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Burrata Caprese</h3>
+                        <p>Fresh burrata cheese with heirloom tomatoes, basil oil, and aged balsamic reduction</p>
+                        <div class="dietary-tags">
+                            <span class="dietary-tag vegetarian">V</span>
+                        </div>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$22</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item-card">
+                    <div class="menu-item-preview">
+                        <img src="images/lobster-bisque.jpg" alt="Lobster Bisque" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$24</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Lobster Bisque</h3>
+                        <p>Rich lobster bisque with coconut cream and fresh chives, served with lobster claw</p>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$24</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item-card featured">
+                    <div class="menu-item-preview">
+                        <img src="images/beef-tartare.jpg" alt="Beef Tartare" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$20</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Beef Tartare</h3>
+                        <p>Hand-cut prime halal beef with capers, cornichons, quail egg, and truffle oil</p>
+                        <div class="dietary-tags">
+                            <span class="dietary-tag halal">Halal</span>
+                        </div>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$20</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                        <div class="featured-badge">Chef's Choice</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Courses Section -->
+    <section id="mains" class="menu-section alt-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Main Courses</h2>
+                <p>Our signature dishes crafted by Executive Chef Alexander Moreau</p>
+            </div>
+            
+            <div class="menu-items">
+                <div class="menu-item-card featured">
+                    <div class="menu-item-preview">
+                        <img src="images/wagyu-beef.jpg" alt="Wagyu Beef Tenderloin" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$85</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Wagyu Beef Tenderloin</h3>
+                        <p>Premium halal Wagyu beef (8oz) with truffle mashed potatoes, seasonal vegetables, and pomegranate reduction</p>
+                        <div class="dietary-tags">
+                            <span class="dietary-tag halal">Halal</span>
+                        </div>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$85</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                        <div class="featured-badge">Signature Dish</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item-card">
+                    <div class="menu-item-preview">
+                        <img src="images/rack-of-lamb.jpg" alt="Herb-Crusted Rack of Lamb" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$68</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Herb-Crusted Rack of Lamb</h3>
+                        <p>New Zealand lamb rack with rosemary jus, ratatouille, and potato gratin</p>
+                        <div class="dietary-tags">
+                            <span class="dietary-tag halal">Halal</span>
+                        </div>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$68</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item-card">
+                    <div class="menu-item-preview">
+                        <img src="images/duck-orange.jpg" alt="Duck à l'Orange" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$56</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Duck à l'Orange</h3>
+                        <p>Confit duck leg with orange glaze, wild rice pilaf, and roasted baby carrots</p>
+                        <div class="dietary-tags">
+                            <span class="dietary-tag halal">Halal</span>
+                        </div>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$56</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item-card">
+                    <div class="menu-item-preview">
+                        <img src="images/truffle-risotto.jpg" alt="Truffle Risotto" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$42</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Truffle Risotto</h3>
+                        <p>Carnaroli rice with Parmigiano-Reggiano, vegetable broth, and freshly shaved black truffle</p>
+                        <div class="dietary-tags">
+                            <span class="dietary-tag vegetarian">V</span>
+                        </div>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$42</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item-card">
+                    <div class="menu-item-preview">
+                        <img src="images/chicken-kebab.jpg" alt="Chicken Kebab Platter" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$38</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Chicken Kebab Platter</h3>
+                        <p>Grilled chicken kebabs with saffron rice, grilled vegetables, and garlic yogurt sauce</p>
+                        <div class="dietary-tags">
+                            <span class="dietary-tag halal">Halal</span>
+                        </div>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$38</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seafood Section -->
+    <section id="seafood" class="menu-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Seafood Specialties</h2>
+                <p>Fresh catches from sustainable sources</p>
+            </div>
+            
+            <div class="menu-items">
+                <div class="menu-item-card featured">
+                    <div class="menu-item-preview">
+                        <img src="images/lobster-thermidor.jpg" alt="Lobster Thermidor" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$78</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Lobster Thermidor</h3>
+                        <p>Atlantic lobster baked with creamy mustard sauce, Gruyère cheese, and fresh herbs</p>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$78</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                        <div class="featured-badge">Most Popular</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item-card">
+                    <div class="menu-item-preview">
+                        <img src="images/halibut.jpg" alt="Pan-Seared Halibut" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$58</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Pan-Seared Halibut</h3>
+                        <p>Wild-caught halibut with lemon beurre blanc, asparagus, and saffron potatoes</p>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$58</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item-card">
+                    <div class="menu-item-preview">
+                        <img src="images/seafood-linguine.jpg" alt="Seafood Linguine" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$52</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Seafood Linguine</h3>
+                        <p>Homemade linguine with shrimp, scallops, mussels, and cherry tomatoes in garlic herb sauce</p>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$52</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item-card">
+                    <div class="menu-item-preview">
+                        <img src="images/grilled-salmon.jpg" alt="Grilled Salmon" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$48</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Grilled Salmon</h3>
+                        <p>Scottish salmon with dill cream sauce, roasted fennel, and quinoa salad</p>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$48</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desserts Section -->
+    <section id="desserts" class="menu-section alt-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Desserts</h2>
+                <p>Sweet conclusions to your dining experience</p>
+            </div>
+            
+            <div class="menu-items">
+                <div class="menu-item-card">
+                    <div class="menu-item-preview">
+                        <img src="images/umm-ali.jpg" alt="Umm Ali" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$14</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Umm Ali</h3>
+                        <p>Traditional Egyptian bread pudding with pistachios, raisins, and coconut cream</p>
+                        <div class="dietary-tags">
+                            <span class="dietary-tag vegetarian">V</span>
+                        </div>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$14</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item-card featured">
+                    <div class="menu-item-preview">
+                        <img src="images/chocolate-date-cake.jpg" alt="Chocolate Date Cake" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$16</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Chocolate Date Cake</h3>
+                        <p>Rich chocolate cake with date filling, served with vanilla bean ice cream</p>
+                        <div class="dietary-tags">
+                            <span class="dietary-tag vegetarian">V</span>
+                        </div>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$16</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                        <div class="featured-badge">House Specialty</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item-card">
+                    <div class="menu-item-preview">
+                        <img src="images/fruit-tart.jpg" alt="Seasonal Fruit Tart" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$12</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Seasonal Fruit Tart</h3>
+                        <p>Almond tart shell with pastry cream and fresh seasonal fruits</p>
+                        <div class="dietary-tags">
+                            <span class="dietary-tag vegetarian">V</span>
+                        </div>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$12</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item-card">
+                    <div class="menu-item-preview">
+                        <img src="images/cheese-board.jpg" alt="Artisan Cheese Board" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$18</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Artisan Cheese Board</h3>
+                        <p>Selection of five artisan cheeses with house-made crackers, nuts, and fruit preserves</p>
+                        <div class="dietary-tags">
+                            <span class="dietary-tag vegetarian">V</span>
+                        </div>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$18</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beverages Section with Hover Preview -->
+    <section id="beverages" class="menu-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Premium Beverages</h2>
+                <p>Carefully curated non-alcoholic beverages to complement your meal</p>
+            </div>
+            
+            <div class="menu-items">
+                <!-- Signature Mocktails -->
+                <div class="menu-item-card">
+                    <div class="menu-item-preview">
+                        <img src="images/bute-sunset.jpg" alt="Bute Sunset Mocktail" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$12</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Bute Sunset</h3>
+                        <p>Pomegranate juice, fresh orange, lime, and mint with a hint of rosewater</p>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$12</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item-card">
+                    <div class="menu-item-preview">
+                        <img src="images/arabian-nights.jpg" alt="Arabian Nights Mocktail" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$10</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Arabian Nights</h3>
+                        <p>Date syrup, coconut milk, banana, and cardamom with crushed ice</p>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$10</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item-card featured">
+                    <div class="menu-item-preview">
+                        <img src="images/mint-lemonade.jpg" alt="Mint Lemonade Sparkler" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$8</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Mint Lemonade Sparkler</h3>
+                        <p>Fresh lemon juice, mint leaves, sparkling water, and agave syrup</p>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$8</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                        <div class="featured-badge">Refreshing</div>
+                    </div>
+                </div>
+                
+                <!-- Hot Beverages -->
+                <div class="menu-item-card">
+                    <div class="menu-item-preview">
+                        <img src="images/arabic-coffee.jpg" alt="Arabic Coffee" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$6</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Arabic Coffee</h3>
+                        <p>Traditional Arabic coffee with cardamom, served with dates</p>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$6</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item-card">
+                    <div class="menu-item-preview">
+                        <img src="images/masala-chai.jpg" alt="Masala Chai" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$5</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Masala Chai</h3>
+                        <p>Spiced tea with ginger, cardamom, cinnamon, and milk</p>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$5</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item-card">
+                    <div class="menu-item-preview">
+                        <img src="images/hot-chocolate.jpg" alt="Hot Chocolate Royale" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$7</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Hot Chocolate Royale</h3>
+                        <p>Premium hot chocolate with whipped cream and chocolate shavings</p>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$7</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fresh Juices -->
+                <div class="menu-item-card">
+                    <div class="menu-item-preview">
+                        <img src="images/pomegranate-juice.jpg" alt="Fresh Pomegranate Juice" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$9</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Fresh Pomegranate Juice</h3>
+                        <p>100% pure pomegranate juice, freshly squeezed</p>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$9</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item-card">
+                    <div class="menu-item-preview">
+                        <img src="images/tropical-blend.jpg" alt="Tropical Fruit Blend" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$8</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Tropical Fruit Blend</h3>
+                        <p>Mango, pineapple, and passion fruit blend</p>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$8</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item-card">
+                    <div class="menu-item-preview">
+                        <img src="images/green-detox.jpg" alt="Green Detox Juice" class="menu-item-image">
+                        <div class="menu-preview-overlay">
+                            <div class="preview-price">$7</div>
+                            <button class="preview-order-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Green Detox</h3>
+                        <p>Cucumber, celery, green apple, and spinach juice</p>
+                        <div class="menu-item-bottom">
+                            <div class="menu-item-price">$7</div>
+                            <button class="order-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Footer Banner -->
+    <section class="menu-banner">
+        <div class="container">
+            <div class="banner-content">
+                <h2>100% Halal Certified & Daily Specials Available</h2>
+                <p>All our meat is sourced from certified halal suppliers. Ask your server about our daily specials and seasonal offerings.</p>
+                <a href="reservation.html" class="btn">Make a Reservation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Summary Modal -->
+    <div class="order-modal" id="orderModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-shopping-cart"></i> Your Order</h3>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- Order Step 1: Order Items -->
+                <div class="order-step active" id="step1">
+                    <div class="order-items" id="orderItems">
+                        <!-- Order items will be added here dynamically -->
+                        <p class="empty-order">No items in your order yet. Add items from the menu.</p>
+                    </div>
+                    <div class="order-summary">
+                        <div class="order-total">
+                            <span>Total:</span>
+                            <span id="orderTotal">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Order Step 2: Customer Details -->
+                <div class="order-step" id="step2">
+                    <h4><i class="fas fa-user"></i> Customer Information</h4>
+                    <form id="customerForm" class="customer-form">
+                        <div class="form-group">
+                            <label for="customerName">Full Name *</label>
+                            <input type="text" id="customerName" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="customerPhone">Phone Number *</label>
+                            <input type="tel" id="customerPhone" required placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="customerEmail">Email Address (Optional)</label>
+                            <input type="email" id="customerEmail" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="specialInstructions">Special Instructions</label>
+                            <textarea id="specialInstructions" rows="3" placeholder="Any special requests or dietary restrictions?"></textarea>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Order Step 3: Delivery & Payment -->
+                <div class="order-step" id="step3">
+                    <h4><i class="fas fa-truck"></i> Delivery & Payment</h4>
+                    <div class="delivery-options">
+                        <div class="form-group">
+                            <label>Order Type</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="orderType" value="delivery" checked>
+                                    <span class="radio-custom"></span>
+                                    <span>Delivery</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="orderType" value="pickup">
+                                    <span class="radio-custom"></span>
+                                    <span>Pickup</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group" id="locationGroup">
+                            <label for="deliveryLocation">Delivery Address *</label>
+                            <input type="text" id="deliveryLocation" required placeholder="Enter your delivery address">
+                            <small class="form-help">Please provide detailed address including street, building, and apartment number</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Payment Method *</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="paymentMethod" value="cash" checked>
+                                    <span class="radio-custom"></span>
+                                    <span>Cash on Delivery</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="paymentMethod" value="card">
+                                    <span class="radio-custom"></span>
+                                    <span>Credit/Debit Card</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="paymentMethod" value="mobile">
+                                    <span class="radio-custom"></span>
+                                    <span>Mobile Payment</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group" id="cardDetails" style="display: none;">
+                            <label for="cardNumber">Card Number</label>
+                            <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456">
+                            <div class="card-details-row">
+                                <div>
+                                    <label for="cardExpiry">Expiry Date</label>
+                                    <input type="text" id="cardExpiry" placeholder="MM/YY">
+                                </div>
+                                <div>
+                                    <label for="cardCVV">CVV</label>
+                                    <input type="text" id="cardCVV" placeholder="123">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Order Step 4: Confirmation -->
+                <div class="order-step" id="step4">
+                    <div class="confirmation-content">
+                        <div class="confirmation-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h4>Order Confirmation</h4>
+                        <p>Please review your order details before confirming.</p>
+                        
+                        <div class="confirmation-details">
+                            <div class="confirmation-section">
+                                <h5><i class="fas fa-utensils"></i> Order Summary</h5>
+                                <div id="confirmationItems"></div>
+                                <div class="confirmation-total">
+                                    <span>Total Amount:</span>
+                                    <span id="confirmationTotal">$0.00</span>
+                                </div>
+                            </div>
+                            
+                            <div class="confirmation-section">
+                                <h5><i class="fas fa-user"></i> Customer Details</h5>
+                                <div id="confirmationCustomer"></div>
+                            </div>
+                            
+                            <div class="confirmation-section">
+                                <h5><i class="fas fa-truck"></i> Delivery & Payment</h5>
+                                <div id="confirmationDelivery"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="terms-agreement">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="termsAgreement">
+                                <span class="checkbox-custom"></span>
+                                <span>I agree to the <a href="terms.html">Terms & Conditions</a> and confirm that all information provided is accurate.</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-footer">
+                <div class="step-indicator">
+                    <span class="step-dot active" data-step="1"></span>
+                    <span class="step-dot" data-step="2"></span>
+                    <span class="step-dot" data-step="3"></span>
+                    <span class="step-dot" data-step="4"></span>
+                </div>
+                
+                <div class="step-buttons">
+                    <button class="btn-prev" id="prevBtn" style="display: none;">
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </button>
+                    
+                    <div class="step-buttons-right">
+                        <button class="btn-clear" id="clearOrder">Clear Order</button>
+                        <button class="btn-next" id="nextBtn">Next <i class="fas fa-arrow-right"></i></button>
+                        <button class="btn-confirm" id="confirmBtn" style="display: none;">Confirm Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="success-modal" id="successModal">
+        <div class="success-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Order Placed Successfully!</h3>
+            <p>Your order has been received and is being prepared.</p>
+            
+            <!-- Success details container -->
+            <div class="success-details">
+                <!-- Receipt will be dynamically inserted here -->
+            </div>
+            
+            <button class="btn-success" id="closeSuccess">Continue Shopping</button>
+        </div>
+    </div>
+
+    <!-- AI Assistant Widget -->
+    <div class="ai-assistant-container" id="aiAssistant">
+        <div class="ai-header">
+            <div class="ai-header-content">
+                <div class="ai-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="ai-info">
+                    <h4>Bute 5 Star AI Assistant</h4>
+                    <p>Ask me about our menu, recommendations, or dietary needs</p>
+                </div>
+                <button class="ai-close-btn" id="aiCloseBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+                <!-- Mobile close button -->
+                <button class="ai-mobile-close" id="aiMobileCloseBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="ai-chat-container" id="aiChatContainer">
+            <div class="ai-messages" id="aiMessages">
+                <!-- Messages will be added here dynamically -->
+                <div class="ai-message ai-message-bot">
+                    <div class="message-content">
+                        <p>👋 Hello! I'm your AI dining assistant. I can help you:</p>
+                        <ul>
+                            <li>Recommend dishes based on your preferences</li>
+                            <li>Answer questions about ingredients or preparation</li>
+                            <li>Suggest halal or vegetarian options</li>
+                            <li>Help with dietary restrictions</li>
+                            <li>Recommend beverage pairings</li>
+                        </ul>
+                        <p>What would you like to know about our menu?</p>
+                    </div>
+                    <div class="message-time">Just now</div>
+                </div>
+            </div>
+            
+            <div class="ai-quick-questions" id="aiQuickQuestions">
+                <button class="quick-question" data-question="What are your most popular dishes?">
+                    <i class="fas fa-fire"></i> Popular Dishes
+                </button>
+                <button class="quick-question" data-question="What vegetarian options do you have?">
+                    <i class="fas fa-leaf"></i> Vegetarian
+                </button>
+                <button class="quick-question" data-question="Recommend a halal main course under $50">
+                    <i class="fas fa-check-circle"></i> Halal Options
+                </button>
+                <button class="quick-question" data-question="What's good for dessert?">
+                    <i class="fas fa-ice-cream"></i> Desserts
+                </button>
+            </div>
+            
+            <div class="ai-input-container">
+                <div class="ai-input-wrapper">
+                    <input type="text" 
+                           id="aiUserInput" 
+                           class="ai-user-input" 
+                           placeholder="Ask me anything about our menu..."
+                           maxlength="200">
+                    <button class="ai-send-btn" id="aiSendBtn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="ai-input-hint">
+                    <small>Try: "What's the difference between Wagyu beef and regular beef?" or "Recommend a seafood dish"</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Assistant Toggle Button -->
+    <div class="ai-assistant-toggle" id="aiAssistantToggle">
+        <i class="fas fa-robot"></i>
+    </div>
+
+    <!-- Order Cart Button -->
+    <div class="order-cart-btn" id="orderCartBtn">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cartCount">0</span>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">BUTE 5 STAR</div>
+                    <p>An award-winning halal dining destination where culinary excellence meets unparalleled service. Experience the art of fine dining in an atmosphere of timeless elegance.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/14RPMbnhgGu/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/ahmeyali.9/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@AhmedAli-k7b" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/254721237883?text=Hello%20Ahmed,%20I%20would%20like%20to%20Know%20about%20Bute%205%20Star%20restuarant" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="menu.html" class="active"><i class="fas fa-chevron-right"></i> Our Menu</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="reservation.html"><i class="fas fa-chevron-right"></i> Reservations</a></li>
+                        <li><a href="event.html"><i class="fas fa-chevron-right"></i> Private Events</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Gumar, Bute District</p>
+                    <p><i class="fas fa-phone"></i> +254 721 237 883</p>
+                    <p><i class="fas fa-envelope"></i> reservations@bute5star.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sun: 5:00 PM - 11:00 PM</p>
+                </div>
+                
+                <div class="footer-hours">
+                    <h3>Opening Hours</h3>
+                    <p><i class="fas fa-utensils"></i> Dinner: 5:00 PM - 11:00 PM</p>
+                    <p><i class="fas fa-calendar-alt"></i> Friday Family Feast: 12:00 PM - 4:00 PM</p>
+                    <p><i class="fas fa-star"></i> Reservations Recommended</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Bute 5 Star Restaurant. All rights reserved. | Developed by Ahmed Ali</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="menu.js"></script>
+</body>
+</html>

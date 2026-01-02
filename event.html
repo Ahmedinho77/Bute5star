@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Private Dining | Bute 5 Star Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="event.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <!-- Header & Navbar -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="logo-text">BUTE <span>5 STAR</span></div>
+                </a>
+                
+                <div class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="reservation.html">Reservations</a></li>
+                    <li><a href="event.html" class="active">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Events Hero Section -->
+    <section class="events-hero">
+        <div class="container">
+            <div class="events-hero-content">
+                <h1>Exceptional Events & Private Dining</h1>
+                <p>Create unforgettable memories with our bespoke event services. From intimate gatherings to grand celebrations, our team ensures every detail is perfect.</p>
+                <div class="hero-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-users"></i>
+                        <span>10 - 200 Guests</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Custom Menus Available</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-star"></i>
+                        <span>Dedicated Event Manager</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Spaces Section -->
+    <section class="spaces-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Event Spaces</h2>
+                <p>Discover our versatile venues, each offering a unique atmosphere for your special occasion</p>
+            </div>
+            
+            <div class="spaces-grid">
+                <div class="space-card" data-space="terrace">
+                    <div class="space-image">
+                        <img src="images/terrace-space.jpg" alt="Outdoor Terrace">
+                        <div class="space-overlay">
+                            <div class="space-info">
+                                <h3>Outdoor Terrace</h3>
+                                <p>Capacity: 40-60 guests</p>
+                                <button class="btn-view-space">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-content">
+                        <h3>Garden Terrace</h3>
+                        <p>A beautiful outdoor space with garden views, perfect for sunset events and summer celebrations.</p>
+                        <div class="space-features">
+                            <span><i class="fas fa-check"></i> Open-air setting</span>
+                            <span><i class="fas fa-check"></i> Garden views</span>
+                            <span><i class="fas fa-check"></i> Sunset backdrop</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-card" data-space="private">
+                    <div class="space-image">
+                        <img src="images/private-room.jpg" alt="Private Dining Room">
+                        <div class="space-overlay">
+                            <div class="space-info">
+                                <h3>Private Dining Room</h3>
+                                <p>Capacity: 20-40 guests</p>
+                                <button class="btn-view-space">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-content">
+                        <h3>The Royal Room</h3>
+                        <p>An elegant private dining room with customizable decor, perfect for intimate gatherings.</p>
+                        <div class="space-features">
+                            <span><i class="fas fa-check"></i> Customizable decor</span>
+                            <span><i class="fas fa-check"></i> Audio-visual system</span>
+                            <span><i class="fas fa-check"></i> Dedicated service</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-card" data-space="main">
+                    <div class="space-image">
+                        <img src="images/main-dining.jpg" alt="Main Dining Room">
+                        <div class="space-overlay">
+                            <div class="space-info">
+                                <h3>Main Dining Room</h3>
+                                <p>Capacity: 80-120 guests</p>
+                                <button class="btn-view-space">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-content">
+                        <h3>Grand Ballroom</h3>
+                        <p>Our largest space with sophisticated ambiance, ideal for weddings and corporate galas.</p>
+                        <div class="space-features">
+                            <span><i class="fas fa-check"></i> Stage & dance floor</span>
+                            <span><i class="fas fa-check"></i> Full audio system</span>
+                            <span><i class="fas fa-check"></i> Professional lighting</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-card" data-space="boardroom">
+                    <div class="space-image">
+                        <img src="images/boardroom.jpg" alt="Boardroom">
+                        <div class="space-overlay">
+                            <div class="space-info">
+                                <h3>Executive Boardroom</h3>
+                                <p>Capacity: 10-20 guests</p>
+                                <button class="btn-view-space">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-content">
+                        <h3>Executive Boardroom</h3>
+                        <p>Modern boardroom with state-of-the-art technology for business meetings and presentations.</p>
+                        <div class="space-features">
+                            <span><i class="fas fa-check"></i> Video conferencing</span>
+                            <span><i class="fas fa-check"></i> Whiteboards</span>
+                            <span><i class="fas fa-check"></i> High-speed WiFi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Types Section -->
+    <section class="event-types-section alt-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Types of Events We Host</h2>
+                <p>We specialize in creating memorable experiences for various occasions</p>
+            </div>
+            
+            <div class="event-types-grid">
+                <div class="event-type-card">
+                    <div class="event-type-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Birthday Parties</h3>
+                    <p>Celebrate your special day with customized themes, special menus, and personalized service.</p>
+                    <ul class="event-features">
+                        <li><i class="fas fa-check"></i> Custom cake design</li>
+                        <li><i class="fas fa-check"></i> Themed decorations</li>
+                        <li><i class="fas fa-check"></i> Special birthday menu</li>
+                    </ul>
+                    <a href="#inquiry-form" class="btn-inquire">Inquire Now</a>
+                </div>
+                
+                <div class="event-type-card featured">
+                    <div class="event-type-icon">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h3>Weddings</h3>
+                    <p>Create your dream wedding with our comprehensive wedding packages and expert planning.</p>
+                    <ul class="event-features">
+                        <li><i class="fas fa-check"></i> Complete wedding planning</li>
+                        <li><i class="fas fa-check"></i> Custom wedding menu</li>
+                        <li><i class="fas fa-check"></i> Bridal suite access</li>
+                    </ul>
+                    <a href="#inquiry-form" class="btn-inquire">Inquire Now</a>
+                    <div class="featured-badge">Most Popular</div>
+                </div>
+                
+                <div class="event-type-card">
+                    <div class="event-type-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Corporate Events</h3>
+                    <p>Professional settings for meetings, conferences, team building, and corporate celebrations.</p>
+                    <ul class="event-features">
+                        <li><i class="fas fa-check"></i> AV equipment included</li>
+                        <li><i class="fas fa-check"></i> Business lunch menus</li>
+                        <li><i class="fas fa-check"></i> Conference facilities</li>
+                    </ul>
+                    <a href="#inquiry-form" class="btn-inquire">Inquire Now</a>
+                </div>
+                
+                <div class="event-type-card">
+                    <div class="event-type-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Graduations</h3>
+                    <p>Celebrate academic achievements with family and friends in a sophisticated setting.</p>
+                    <ul class="event-features">
+                        <li><i class="fas fa-check"></i> Custom graduation cake</li>
+                        <li><i class="fas fa-check"></i> Photo backdrop area</li>
+                        <li><i class="fas fa-check"></i> Group menu options</li>
+                    </ul>
+                    <a href="#inquiry-form" class="btn-inquire">Inquire Now</a>
+                </div>
+                
+                <div class="event-type-card">
+                    <div class="event-type-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Anniversaries</h3>
+                    <p>Romantic settings and special touches for milestone anniversary celebrations.</p>
+                    <ul class="event-features">
+                        <li><i class="fas fa-check"></i> Romantic table settings</li>
+                        <li><i class="fas fa-check"></i> Champagne service</li>
+                        <li><i class="fas fa-check"></i> Anniversary desserts</li>
+                    </ul>
+                    <a href="#inquiry-form" class="btn-inquire">Inquire Now</a>
+                </div>
+                
+                <div class="event-type-card">
+                    <div class="event-type-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Family Reunions</h3>
+                    <p>Spacious settings perfect for family gatherings of all sizes and generations.</p>
+                    <ul class="event-features">
+                        <li><i class="fas fa-check"></i> Family-style dining</li>
+                        <li><i class="fas fa-check"></i> Kid-friendly options</li>
+                        <li><i class="fas fa-check"></i> Group activities</li>
+                    </ul>
+                    <a href="#inquiry-form" class="btn-inquire">Inquire Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Packages Section -->
+    <section class="packages-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Event Packages</h2>
+                <p>Choose from our curated packages or create a custom package for your specific needs</p>
+            </div>
+            
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Silver Package</h3>
+                        <div class="package-price">
+                            <span class="price">$75</span>
+                            <span class="per-person">per person</span>
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 3-Course Dinner</li>
+                            <li><i class="fas fa-check"></i> Standard Table Setup</li>
+                            <li><i class="fas fa-check"></i> Basic Audio System</li>
+                            <li><i class="fas fa-check"></i> Standard Floral Centerpieces</li>
+                            <li><i class="fas fa-times"></i> Custom Decorations</li>
+                            <li><i class="fas fa-times"></i> Photo Booth</li>
+                            <li><i class="fas fa-times"></i> Dedicated Event Manager</li>
+                        </ul>
+                        <div class="package-minimum">
+                            <p><i class="fas fa-users"></i> Minimum 30 guests</p>
+                        </div>
+                        <button class="btn-select-package" data-package="silver">Select Package</button>
+                    </div>
+                </div>
+                
+                <div class="package-card featured">
+                    <div class="package-header">
+                        <h3>Gold Package</h3>
+                        <div class="package-price">
+                            <span class="price">$120</span>
+                            <span class="per-person">per person</span>
+                        </div>
+                        <div class="popular-badge">Most Popular</div>
+                    </div>
+                    <div class="package-content">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 4-Course Gourmet Dinner</li>
+                            <li><i class="fas fa-check"></i> Premium Table Setup</li>
+                            <li><i class="fas fa-check"></i> Professional Audio System</li>
+                            <li><i class="fas fa-check"></i> Premium Floral Arrangements</li>
+                            <li><i class="fas fa-check"></i> Custom Decorations</li>
+                            <li><i class="fas fa-check"></i> Photo Booth (2 hours)</li>
+                            <li><i class="fas fa-times"></i> Event Coordinator</li>
+                        </ul>
+                        <div class="package-minimum">
+                            <p><i class="fas fa-users"></i> Minimum 25 guests</p>
+                        </div>
+                        <button class="btn-select-package" data-package="gold">Select Package</button>
+                    </div>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Platinum Package</h3>
+                        <div class="package-price">
+                            <span class="price">$180</span>
+                            <span class="per-person">per person</span>
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 5-Course Tasting Menu</li>
+                            <li><i class="fas fa-check"></i> Luxury Table Setup</li>
+                            <li><i class="fas fa-check"></i> Full AV System & Lighting</li>
+                            <li><i class="fas fa-check"></i> Premium Floral & Decor</li>
+                            <li><i class="fas fa-check"></i> Complete Event Design</li>
+                            <li><i class="fas fa-check"></i> Photo Booth (4 hours)</li>
+                            <li><i class="fas fa-check"></i> Dedicated Event Manager</li>
+                        </ul>
+                        <div class="package-minimum">
+                            <p><i class="fas fa-users"></i> Minimum 20 guests</p>
+                        </div>
+                        <button class="btn-select-package" data-package="platinum">Select Package</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="custom-package">
+                <h3><i class="fas fa-star"></i> Custom Package</h3>
+                <p>Have specific requirements? Let us create a bespoke package tailored to your exact needs.</p>
+                <button class="btn-custom-inquiry" id="customInquiryBtn">Request Custom Package</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Inquiry Form -->
+    <section id="inquiry-form" class="inquiry-section alt-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Event Inquiry Form</h2>
+                <p>Fill out the form below and our events team will contact you within 24 hours</p>
+            </div>
+            
+            <div class="inquiry-form-container">
+                <form id="eventInquiryForm" class="event-inquiry-form">
+                    <div class="form-step active" id="inquiryStep1">
+                        <h3><span class="step-number">1</span> Event Details</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="eventType"><i class="fas fa-calendar-alt"></i> Event Type *</label>
+                                <select id="eventType" name="eventType" required>
+                                    <option value="">Select event type</option>
+                                    <option value="wedding">Wedding</option>
+                                    <option value="birthday">Birthday Party</option>
+                                    <option value="corporate">Corporate Event</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="graduation">Graduation</option>
+                                    <option value="family">Family Reunion</option>
+                                    <option value="other">Other Celebration</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="eventDate"><i class="far fa-calendar"></i> Preferred Date *</label>
+                                <input type="text" id="eventDate" name="eventDate" class="datepicker" placeholder="Select date" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="eventGuests"><i class="fas fa-user-friends"></i> Number of Guests *</label>
+                                <select id="eventGuests" name="eventGuests" required>
+                                    <option value="">Select guests</option>
+                                    <option value="10-20">10-20 guests</option>
+                                    <option value="21-40">21-40 guests</option>
+                                    <option value="41-60">41-60 guests</option>
+                                    <option value="61-80">61-80 guests</option>
+                                    <option value="81-100">81-100 guests</option>
+                                    <option value="101-150">101-150 guests</option>
+                                    <option value="151-200">151-200 guests</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="eventTime"><i class="far fa-clock"></i> Preferred Time *</label>
+                                <select id="eventTime" name="eventTime" required>
+                                    <option value="">Select time</option>
+                                    <option value="morning">Morning (9 AM - 12 PM)</option>
+                                    <option value="afternoon">Afternoon (1 PM - 4 PM)</option>
+                                    <option value="evening">Evening (5 PM - 8 PM)</option>
+                                    <option value="night">Night (9 PM - 12 AM)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="eventSpace"><i class="fas fa-map-marker-alt"></i> Preferred Space</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="eventSpace" value="terrace">
+                                    <span class="checkbox-custom"></span>
+                                    <span>Outdoor Terrace</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="eventSpace" value="private">
+                                    <span class="checkbox-custom"></span>
+                                    <span>Private Dining Room</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="eventSpace" value="main">
+                                    <span class="checkbox-custom"></span>
+                                    <span>Main Dining Room</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="eventSpace" value="boardroom">
+                                    <span class="checkbox-custom"></span>
+                                    <span>Executive Boardroom</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="eventBudget"><i class="fas fa-dollar-sign"></i> Estimated Budget per Person</label>
+                            <select id="eventBudget" name="eventBudget">
+                                <option value="">Select budget range</option>
+                                <option value="50-75">$50 - $75 per person</option>
+                                <option value="76-100">$76 - $100 per person</option>
+                                <option value="101-150">$101 - $150 per person</option>
+                                <option value="151-200">$151 - $200 per person</option>
+                                <option value="200+">$200+ per person</option>
+                                <option value="custom">Custom Budget</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="eventDescription"><i class="fas fa-file-alt"></i> Event Description</label>
+                            <textarea id="eventDescription" name="eventDescription" rows="3" placeholder="Tell us about your event vision, theme, and any special requirements..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-step" id="inquiryStep2">
+                        <h3><span class="step-number">2</span> Contact Information</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName"><i class="fas fa-user"></i> Full Name *</label>
+                                <input type="text" id="contactName" name="contactName" required placeholder="Enter your full name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contactEmail"><i class="fas fa-envelope"></i> Email Address *</label>
+                                <input type="email" id="contactEmail" name="contactEmail" required placeholder="Enter your email address">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactPhone"><i class="fas fa-phone"></i> Phone Number *</label>
+                                <input type="tel" id="contactPhone" name="contactPhone" required placeholder="Enter your phone number">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contactCompany"><i class="fas fa-building"></i> Company/Organization</label>
+                                <input type="text" id="contactCompany" name="contactCompany" placeholder="Enter company name (if applicable)">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="additionalInfo"><i class="fas fa-info-circle"></i> Additional Information</label>
+                            <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Any additional information or questions for our events team..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletterOptin" name="newsletterOptin">
+                                <span class="checkbox-custom"></span>
+                                <span>Subscribe to receive updates about upcoming events and special offers</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-step" id="inquiryStep3">
+                        <h3><span class="step-number">3</span> Review & Submit</h3>
+                        
+                        <div class="review-summary">
+                            <div class="summary-section">
+                                <h4><i class="fas fa-calendar-check"></i> Event Details</h4>
+                                <div id="summaryEventDetails" class="summary-content">
+                                    <p>Event Type: <span id="summaryEventType">Not selected</span></p>
+                                    <p>Date: <span id="summaryEventDate">Not selected</span></p>
+                                    <p>Guests: <span id="summaryEventGuests">Not selected</span></p>
+                                    <p>Time: <span id="summaryEventTime">Not selected</span></p>
+                                    <p>Spaces: <span id="summaryEventSpaces">Not selected</span></p>
+                                    <p>Budget: <span id="summaryEventBudget">Not specified</span></p>
+                                </div>
+                            </div>
+                            
+                            <div class="summary-section">
+                                <h4><i class="fas fa-user-circle"></i> Contact Information</h4>
+                                <div id="summaryContactInfo" class="summary-content">
+                                    <p>Name: <span id="summaryContactName">Not provided</span></p>
+                                    <p>Email: <span id="summaryContactEmail">Not provided</span></p>
+                                    <p>Phone: <span id="summaryContactPhone">Not provided</span></p>
+                                    <p>Company: <span id="summaryContactCompany">Not provided</span></p>
+                                </div>
+                            </div>
+                            
+                            <div class="summary-section">
+                                <h4><i class="fas fa-file-alt"></i> Event Description</h4>
+                                <div id="summaryEventDesc" class="summary-content">
+                                    <p id="summaryEventDescriptionText">No description provided</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="termsAgreement" name="termsAgreement" required>
+                                <span class="checkbox-custom"></span>
+                                <span>I agree to the <a href="#" id="eventTermsLink">Event Terms & Conditions</a> *</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-navigation">
+                        <button type="button" class="btn-prev" id="inquiryPrevBtn">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </button>
+                        
+                        <div class="step-indicator">
+                            <span class="step-dot active" data-step="1"></span>
+                            <span class="step-dot" data-step="2"></span>
+                            <span class="step-dot" data-step="3"></span>
+                        </div>
+                        
+                        <button type="button" class="btn-next" id="inquiryNextBtn">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </button>
+                        
+                        <button type="submit" class="btn-submit" id="inquirySubmitBtn" style="display: none;">
+                            <i class="fas fa-paper-plane"></i> Submit Inquiry
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials from Past Events -->
+    <section class="event-testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Happy Clients</h2>
+                <p>See what our clients say about their event experiences at Bute 5 Star</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Our wedding at Bute 5 Star was absolutely magical! The team went above and beyond to make our day perfect. The food was exquisite and the service was impeccable."</p>
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/wedding-testimonial.jpg" alt="Sarah & Michael">
+                            <div class="author-info">
+                                <h4>Sarah & Michael</h4>
+                                <p>Wedding Celebration, July 2023</p>
+                                <div class="event-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"The corporate retreat was a huge success thanks to the professional team at Bute 5 Star. The boardroom facilities were state-of-the-art and the catering was exceptional."</p>
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/corporate-testimonial.jpg" alt="David Chen">
+                            <div class="author-info">
+                                <h4>David Chen</h4>
+                                <p>Corporate Retreat, Tech Innovations Ltd.</p>
+                                <div class="event-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"My 50th birthday party was everything I dreamed of and more. The terrace setting was beautiful at sunset, and the personalized menu was a hit with all my guests."</p>
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/sous-chef.jpg" alt="Fatima Ali">
+                            <div class="author-info">
+                                <h4>Fatima Ali</h4>
+                                <p>50th Birthday Celebration</p>
+                                <div class="event-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="slider-dot active" data-slide="0"></span>
+                        <span class="slider-dot" data-slide="1"></span>
+                        <span class="slider-dot" data-slide="2"></span>
+                    </div>
+                    <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="event-faq alt-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about planning your event with us</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <h3>How far in advance should I book my event?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We recommend booking at least 3-6 months in advance for weekend events and 1-2 months for weekday events. For weddings and large corporate events, booking 6-12 months ahead is advisable to secure your preferred date.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is included in your event packages?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our packages include venue rental, tables and chairs, linens, basic decor, audio system, and food service. Additional services like custom decor, photography, entertainment, and specialty menus can be added to create a personalized experience.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer halal catering options?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! All our event catering is 100% halal certified. We offer a wide range of halal menu options and can accommodate special dietary requirements including vegetarian, vegan, and gluten-free options upon request.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I bring my own decorations?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We welcome personal decorations to make your event unique. Our team will work with you to ensure proper setup and coordination. Some restrictions may apply for certain types of decorations (open flames, confetti, etc.)</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is your cancellation policy?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Cancellations made more than 30 days before the event receive a full refund minus a 10% administrative fee. Cancellations 15-30 days prior receive a 50% refund. Cancellations within 14 days are non-refundable but can be rescheduled within 6 months.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide event planning services?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer comprehensive event planning services through our dedicated events team. From concept development to execution, we'll handle all the details to ensure your event runs smoothly. Additional planning fees may apply based on the complexity of your event.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="event-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Plan Your Event?</h2>
+                <p>Contact our events team today to start planning your unforgettable celebration</p>
+                <div class="cta-buttons">
+                    <a href="tel:+254721237883" class="btn-cta phone">
+                        <i class="fas fa-phone"></i> Call Now: +254 721 237 883
+                    </a>
+                    <a href="mailto:events@bute5star.com" class="btn-cta email">
+                        <i class="fas fa-envelope"></i> Email Us
+                    </a>
+                    <a href="#inquiry-form" class="btn-cta primary">
+                        <i class="fas fa-calendar-plus"></i> Submit Inquiry Form
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Panel Button -->
+    <button class="admin-panel-btn" id="adminPanelBtn">
+        <i class="fas fa-user-shield"></i> Admin Panel
+    </button>
+
+    <!-- Admin Login Modal -->
+    <div class="admin-login-modal" id="adminLoginModal">
+        <div class="login-modal-content">
+            <button class="login-modal-close" id="loginModalClose">&times;</button>
+            <div class="login-icon">
+                <i class="fas fa-user-shield"></i>
+            </div>
+            <h3>Admin Access Required</h3>
+            <p>Enter password to access event inquiries</p>
+            
+            <form id="adminLoginForm">
+                <div class="form-group">
+                    <label for="adminPassword"><i class="fas fa-key"></i> Admin Password</label>
+                    <input type="password" id="adminPassword" name="adminPassword" 
+                           placeholder="Enter admin password" required>
+                    <div class="password-toggle">
+                        <i class="fas fa-eye" id="togglePassword"></i>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="rememberMe" name="rememberMe">
+                        <span class="checkbox-custom"></span>
+                        <span>Remember me for 7 days</span>
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn-login">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </button>
+                
+                
+            </form>
+        </div>
+    </div>
+
+    <!-- Admin Panel Modal -->
+    <div class="admin-panel-modal" id="adminPanelModal">
+        <div class="admin-modal-content">
+            <div class="admin-modal-header">
+                <h3><i class="fas fa-user-shield"></i> Event Inquiries Admin Panel</h3>
+                <button class="admin-modal-close" id="adminModalClose">&times;</button>
+            </div>
+            
+            <div class="admin-modal-body">
+                <div class="admin-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalInquiries">0</div>
+                        <div class="stat-label">Total Inquiries</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="pendingInquiries">0</div>
+                        <div class="stat-label">Pending</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="contactedInquiries">0</div>
+                        <div class="stat-label">Contacted</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="confirmedInquiries">0</div>
+                        <div class="stat-label">Confirmed</div>
+                    </div>
+                </div>
+                
+                <div class="admin-actions">
+                    <button class="btn-admin-action" id="exportCSV">
+                        <i class="fas fa-file-csv"></i> Export to CSV
+                    </button>
+                    <button class="btn-admin-action" id="printInquiries">
+                        <i class="fas fa-print"></i> Print List
+                    </button>
+                    <button class="btn-admin-action danger" id="clearAllInquiries">
+                        <i class="fas fa-trash"></i> Clear All Data
+                    </button>
+                    <button class="btn-admin-action" id="changePassword">
+                        <i class="fas fa-key"></i> Change Password
+                    </button>
+                </div>
+                
+                <div class="search-filter">
+                    <input type="text" id="searchInquiries" placeholder="Search inquiries by name, email, or event type...">
+                    <select id="filterStatus">
+                        <option value="">All Status</option>
+                        <option value="pending">Pending</option>
+                        <option value="contacted">Contacted</option>
+                        <option value="confirmed">Confirmed</option>
+                        <option value="cancelled">Cancelled</option>
+                    </select>
+                    <select id="filterEventType">
+                        <option value="">All Event Types</option>
+                        <option value="wedding">Wedding</option>
+                        <option value="birthday">Birthday</option>
+                        <option value="corporate">Corporate</option>
+                        <option value="anniversary">Anniversary</option>
+                        <option value="graduation">Graduation</option>
+                        <option value="family">Family</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="inquiries-list-container">
+                    <div class="inquiries-list" id="inquiriesList">
+                        <!-- Inquiries will be loaded here -->
+                        <div class="no-inquiries">
+                            <i class="fas fa-inbox"></i>
+                            <p>No event inquiries found</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="admin-modal-footer">
+                <div class="session-info">
+                    <p><i class="fas fa-clock"></i> Session expires in: <span id="sessionTimer">30:00</span></p>
+                    <button class="btn-logout" id="adminLogout">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Change Password Modal -->
+    <div class="change-password-modal" id="changePasswordModal">
+        <div class="change-password-content">
+            <button class="change-password-close" id="changePasswordClose">&times;</button>
+            <div class="password-icon">
+                <i class="fas fa-key"></i>
+            </div>
+            <h3>Change Admin Password</h3>
+            
+            <form id="changePasswordForm">
+                <div class="form-group">
+                    <label for="currentPassword"><i class="fas fa-lock"></i> Current Password</label>
+                    <input type="password" id="currentPassword" name="currentPassword" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="newPassword"><i class="fas fa-lock"></i> New Password</label>
+                    <input type="password" id="newPassword" name="newPassword" required minlength="6">
+                    <small class="password-hint">Minimum 6 characters, include letters and numbers</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmPassword"><i class="fas fa-lock"></i> Confirm New Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                
+                <div class="password-strength">
+                    <div class="strength-meter" id="strengthMeter"></div>
+                    <div class="strength-text" id="strengthText">Password strength</div>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="button" class="btn-cancel" id="cancelChangePassword">
+                        Cancel
+                    </button>
+                    <button type="submit" class="btn-save-password">
+                        <i class="fas fa-save"></i> Change Password
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="event-success-modal" id="successModal">
+        <div class="success-content">
+            <button class="success-close" id="successClose">&times;</button>
+            <div class="success-icon">
+                <i class="fas fa-calendar-check"></i>
+            </div>
+            <h3>Inquiry Submitted Successfully!</h3>
+            <p>Thank you for your interest in hosting your event at Bute 5 Star. Our events team will contact you within 24 hours.</p>
+            
+            <div class="success-details">
+                <p><strong>Inquiry Reference:</strong> <span id="inquiryRef">BUT-EVT-20251231-001</span></p>
+                <p><strong>Contact Person:</strong> <span id="successContactName">John Doe</span></p>
+                <p><strong>Event Type:</strong> <span id="successEventType">Wedding</span></p>
+                <p><strong>Expected Response:</strong> Within 24 hours via email/phone</p>
+            </div>
+            
+            <div class="success-next-steps">
+                <h4><i class="fas fa-list-check"></i> What Happens Next?</h4>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Our events manager will review your inquiry</li>
+                    <li><i class="fas fa-check-circle"></i> We'll schedule a consultation call/meeting</li>
+                    <li><i class="fas fa-check-circle"></i> You'll receive a customized proposal</li>
+                    <li><i class="fas fa-check-circle"></i> We'll work together to finalize details</li>
+                </ul>
+            </div>
+            
+            <button class="btn-success" id="closeSuccess">
+                <i class="fas fa-check"></i> Continue Browsing
+            </button>
+        </div>
+    </div>
+
+    <!-- Space Details Modal -->
+    <div class="space-modal" id="spaceModal">
+        <div class="space-modal-content">
+            <button class="space-modal-close" id="spaceModalClose">&times;</button>
+            <div class="space-modal-body" id="spaceModalBody">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">BUTE 5 STAR</div>
+                    <p>An award-winning halal dining destination where culinary excellence meets unparalleled service. Experience the art of fine dining in an atmosphere of timeless elegance.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/14RPMbnhgGu/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/ahmeyali.9/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@AhmedAli-k7b" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/254721237883?text=Hello%20Ahmed,%20I%20would%20like%20to%20Know%20about%20Bute%205%20Star%20restuarant" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Our Menu</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="reservation.html"><i class="fas fa-chevron-right"></i> Reservations</a></li>
+                        <li><a href="event.html" class="active"><i class="fas fa-chevron-right"></i> Events</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Bute Town, Wajir County</p>
+                    <p><i class="fas fa-phone"></i> +254 721 237 883</p>
+                    <p><i class="fas fa-envelope"></i> events@bute5star.com</p>
+                    <p><i class="fas fa-clock"></i> Events Office: 9 AM - 6 PM</p>
+                </div>
+                
+                <div class="footer-events">
+                    <h3>Events Information</h3>
+                    <p><i class="fas fa-calendar-alt"></i> Book 3-6 months in advance</p>
+                    <p><i class="fas fa-users"></i> Capacity: 10-200 guests</p>
+                    <p><i class="fas fa-check-circle"></i> Custom menus available</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Bute 5 Star Restaurant. All rights reserved. | Developed by Ahmed Ali</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="event.js"></script>
+</body>
+</html>
